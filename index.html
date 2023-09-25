@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Bankist</title>
+</head>
+<body>
+    <main>
+        <!-- Login Section Start -->
+        <section class="login-section">
+            <div class="bankist-grid">
+                <div class="container-fluid">
+                    <div class="row login-section-row">
+                        <div class="col-sm-3 left-col">
+                            <p class="welcome">Login to get started</p>
+                        </div>
+                        <div class="col-sm-4 middle-col">
+                            <div class="logo">
+                                <img src="./img/logo.png" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col-sm-5 right-col">
+                            <form>
+                                <div class="form-content">
+                                    <input type="text" class="username-input" placeholder="Enter username">
+                                    <input type="password" class="password-input" placeholder="Enter password" inputmode="numeric">
+                                    <button type="button" class="login-btn">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Login Section End -->
+
+        <!-- App Section Start -->
+        <section class="app">
+            <div class="bankist-grid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Current Balance Section Start -->
+                        <div class="col-sm-6 balance-row">
+                            <div>
+                                <p class="balance_label">Current balance</p>
+                                <p class="balance_date">As of <span class="date">23/09/2023, 12:24</span></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 balance-row">
+                            <p class="balance_value">25 952,59 €</p>
+                        </div>
+                        <!-- Current Balance Section End -->
+
+                        <div class="col-sm-7 movements-col">
+                            <!-- Movements Section Start -->
+                            <div class="movements">
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-deposit">8 deposit</p>
+                                        <p class="movements-date">12/03/2020</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">1300,00 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-withdrawal">6 withdrawal</p>
+                                        <p class="movements-date">23/12/2019</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">-133,90 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-deposit">2 deposit</p>
+                                        <p class="movements-date">23/08/2020</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">600,90 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-withdrawal">1 withdrawal</p>
+                                        <p class="movements-date">12/05/2015</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">1000 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-deposit">3 deposit</p>
+                                        <p class="movements-date">20/04/2021</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">50000 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-withdrawal">5 withdrawal</p>
+                                        <p class="movements-date">25/09/2012</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">-1000,90 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-deposit">7 deposit</p>
+                                        <p class="movements-date">20/10/2008</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">-2000,90 €</p>
+                                    </div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movements-type-row">
+                                        <p class="movements-type movements-type-withdrawal">9 withdrawal</p>
+                                        <p class="movements-date">20/07/2015</p>
+                                    </div>
+                                    <div>
+                                        <p class="movements-value">200 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Movements Section End -->
+
+                            <!-- Summary Section Start -->
+                            <div class="summary">
+                                <div class="summay-label-content">
+                                    <p class="summary-label">In</p>
+                                    <p class="summary-value summary-value-in">27 035,20 €</p>
+                                </div>
+                                <div class="summay-label-content">
+                                    <p class="summary-label">Out</p>
+                                    <p class="summary-value summary-value-out">1082,61 €</p>
+                                </div>
+                                <div class="summay-label-content">
+                                    <p class="summary-label">Interest</p>
+                                    <p class="summary-value summary-value-interest">323,46 €</p>
+                                </div>
+                                <button type="button" class="btn-sort">↓ SORT</button>
+                            </div>
+                            <!-- Summary Section End -->
+                        </div>
+                        <!-- Operation Section Start -->
+                        <div class="col-sm-5 operation-col">
+                            <div class="operation operation-transfer">
+                                <h2 class="form-transfer-heading">Transfer money</h2>
+                                <form class="form form-transfer">
+                                    <div class="transfer-content">
+                                        <div>
+                                            <input type="text" class="form-input form-input-to" placeholder="Enter username">
+                                            <div class="form-label">
+                                                <label>Transfer to</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="number" class="form-input form-input-amount" placeholder="Enter amount">
+                                            <div class="form-label">
+                                                <label>Amount</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="form-btn form-btn-transfer">→</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="operation operation-loan">
+                                <h2 class="form-transfer-heading">Request loan</h2>
+                                <form class="form form-loan">
+                                    <div class="transfer-content">
+                                        <div>
+                                            <input type="text" class="form-input form-input-loan-amount" placeholder="Enter amount">
+                                            <div class="form-label">
+                                                <label>Amount</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="form-btn form-btn-loan">→</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="operation operation-close">
+                                <h2 class="form-transfer-heading">Close account</h2>
+                                <form class="form form-close">
+                                    <div class="transfer-content">
+                                        <div>
+                                            <input type="text" class="form-input form-input-username" placeholder="Enter username">
+                                            <div class="form-label">
+                                                <label>Confirm user</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="password" class="form-input form-input-password" placeholder="Enter password">
+                                            <div class="form-label">
+                                                <label>Confirm Password</label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="form-btn form-btn-close">→</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="text-end timer-content">
+                                <p class="logout-timer">You will be logged out in <span class="timer">9:50</span></p>
+                            </div>
+                        </div>
+                        <!-- Operation Section End -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App Section End -->
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

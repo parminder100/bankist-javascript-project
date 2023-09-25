@@ -1,0 +1,335 @@
+:root{
+    --font-family:'Poppins', sans-serif;
+    --primary-color: #f3f3f3;
+}
+body{
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p,h1,h2,h3,h4,h5,h6,ul{
+    margin-bottom: 0px;
+}
+/* Login section start */
+.login-section{
+    padding-top:2rem;
+}
+.bankist-grid{
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    margin:auto;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 53px;
+}
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:20px;
+}
+.welcome{
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.login-section-row{
+    align-items: center;
+}
+.username-input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 8px 16px 8px 16px;
+    outline: none;
+}
+.password-input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 8px 16px 8px 16px;
+    outline: none;
+}
+.login-btn{
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+/* Login section End */
+
+
+/* App section start */
+.app{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    transition: all 1s;
+    display: none;
+}
+
+/* Current Balance Section Start */
+.balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.balance_label{
+    font-size: 24px;
+    font-weight: 600;
+}
+.balance_date{
+    font-size: 15px;
+    color: #888;
+}
+.balance_value{
+    font-size: 40px;
+    text-align: end;
+}
+.balance-row{
+    margin-bottom: 50px;
+}
+/* Current Balance Section End */
+
+/* Movements Section Start */
+.movements-type{
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 160px;
+    padding: 0.1rem 1rem
+}
+.movements-type-deposit{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.movements-date{
+    color: #666;
+    text-transform: uppercase;
+}
+.movements-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+}
+.movements-type-row{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.movements-type-withdrawal{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.movements-value{
+    font-size: 1.7 rem;
+}
+.movements{
+    background-color: #fff;
+    border-radius: 1rem;
+    height: 510px;
+    overflow-y: scroll;
+}
+/* Movements Section End */
+
+
+/* Summary Section Start */
+.summary{
+    margin-top: 103px;
+    display: flex;
+    align-items: baseline;
+    gap:20px;
+}
+.summay-label-content{
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+}
+.summary-label{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.summary-value{
+    font-size: 31px;
+}
+.summary-value-in{
+    color: #66c873;
+}
+.summary-value-out{
+    color: #f5465d;
+}
+.summary-value-interest{
+    color: #66c873;
+}
+.btn-sort{
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* Summary Section End */
+
+
+/* Operation Section Start */
+.operation{
+    border-radius: 1rem;
+    padding: 25px 40px;
+    color: #333;
+}
+.operation-transfer{
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+    margin-bottom: 20px;
+}
+.transfer-content{
+    display: flex;
+    gap:15px;
+}
+.form-transfer-heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.form-input{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    padding: 0.3rem 1rem;
+    border-radius: 0.7rem;
+    transition: all 0.3s;
+    border-width: 0px;
+    outline:none;
+}
+.form-label{
+    text-align: center;
+    margin-top: 5px;
+}
+.form-label label{
+    font-size: 15px;
+}
+.form-btn{
+    border:none;
+    border-radius: 0.7rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 65px;
+}
+.operation-loan{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+    margin-bottom: 20px;
+}
+.operation-close{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    margin-bottom: 50px;
+}
+.logout-timer{
+    font-size: 1.25rem;
+}
+.timer{
+    font-weight: 600;
+}
+/* Operation Section End */
+/* App section End */
+
+
+
+/* Media Queries Start */
+@media (max-width: 575.98px) {
+    .summary{
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    .timer-content{
+        text-align: left !important;
+    }
+    .form-label label{
+        font-size: 12px;
+    }
+    .movements-type{
+        font-size: 13px;
+    }
+    .movements-type-row{
+        gap: 15px;
+    }
+    ::placeholder{
+        font-size: 12px;
+    }
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .movements-row{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .balance_value{
+        text-align: left;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .login-section-row{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .left-col{
+        width: 100%;
+    }
+    .middle-col{
+        width: 100%;
+    }
+    .right-col{
+        width: 100%;
+    }
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .movements-col{
+        width: 100%;
+    }
+    .operation-col{
+        width: 100%;
+    }
+    .summary-value{
+        font-size: 19px;
+    }
+    .btn-sort{
+        font-size: 19px;
+    }
+    .summary{
+        margin-bottom: 50px;
+        margin-top: 60px;
+    }
+    .timer-content{
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .summary{
+        gap: 10px;
+        margin-top: 133px;
+    }
+    .summary-value{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .summary{
+        gap:10px;
+        margin-top: 137px;
+    }
+    .summary-value{
+        font-size: 21px;
+    }
+}
+/* Media Queries End */
